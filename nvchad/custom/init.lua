@@ -1,7 +1,5 @@
 -- enable spell check
 vim.opt.spell = true
--- auto-open tree
-
 -- auto-close tree when last buffer is closed
 vim.api.nvim_create_autocmd("QuitPre", {
   callback = function()
