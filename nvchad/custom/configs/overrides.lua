@@ -9,20 +9,28 @@ M.treesitter = {
 
 M.mason = {
   ensure_installed = {
-    -- lua stuff
+
+    -- Lua
     "lua-language-server",
     "stylua",
 
-    -- web dev stuff
+    -- web dev
     "css-lsp",
     "html-lsp",
     "typescript-language-server",
     "deno",
     "prettier",
 
-    -- c/cpp stuff
-    "clangd",
-    "clang-format",
+    -- Python
+    "black",
+    "pylint",
+    "autopep8",
+
+    -- Terraform
+    "terraformls",
+    "tflint",
+    "tfsec",
+    "dockerfile-language-server"
   },
 }
 
@@ -39,6 +47,11 @@ M.nvimtree = {
         git = true,
       },
     },
+  },
+
+  hijack_directories = {
+    enable = true,
+    auto_open = true,
   },
 }
 
