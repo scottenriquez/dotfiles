@@ -1,0 +1,36 @@
+""" Map leader to space ---------------------
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+set NERDTree
+
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+
+""" Common settings -------------------------
+set showmode
+set so=5
+set incsearch
+set nu
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+""" Mappings --------------------------------
+map <Tab>      <Action>(NextTab)
+map <leader>e  <Action>(SelectInProjectView)
+map <leader>x  <Action>(CloseActiveTab)
+map <leader>/  <Action>(CommentByLineComment)
+map <leader>ff <Action>(SearchEverywhere)
+map <leader>fm <Action>(ReformatCode)
+inoremap jk <Esc>
+inoremap kj <Esc>
