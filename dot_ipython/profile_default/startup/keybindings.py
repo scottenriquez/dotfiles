@@ -6,19 +6,9 @@ from prompt_toolkit.key_binding.vi_state import InputMode
 
 ip = get_ipython()
 
-# def switch_to_navigation_mode(event):
-#     vi_state = event.cli.vi_state
-#     vi_state.reset(InputMode.NAVIGATION)
-
 def switch_to_navigation_mode(event):
    vi_state = event.cli.vi_state
    vi_state.input_mode = InputMode.NAVIGATION
-
-# if getattr(ip, 'pt_cli'):
-#     registry = ip.pt_cli.application.key_bindings_registry
-#     registry.add_binding(u'k',u'j',
-#                          filter=(HasFocus(DEFAULT_BUFFER)
-#                                  & ViInsertMode()))(switch_to_navigation_mode)
 
 if getattr(ip, 'pt_app', None):
    registry = ip.pt_app.key_bindings
