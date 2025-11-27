@@ -12,15 +12,17 @@ end
 vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-require("lazy").setup('user.plugins')
 require("lazy").setup({
-  "neanias/everforest-nvim",
-  version = false,
-  lazy = false,
-  priority = 1000,
-  config = function()
-    require("everforest").setup({
-      background = "hard",
-    })
-  end,
+  { import = 'user.plugins' },  -- imports your existing plugins
+  {
+    "neanias/everforest-nvim",
+    version = false,
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("everforest").setup({
+        background = "hard",
+      })
+    end,
+  },
 })
