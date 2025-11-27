@@ -55,23 +55,24 @@ tmux_conf_new_session_prompt=false
 tmux_conf_24b_colour=auto
 
 # default theme
-tmux_conf_theme_colour_1="#080808"    # dark gray
-tmux_conf_theme_colour_2="#303030"    # gray
-tmux_conf_theme_colour_3="#8a8a8a"    # light gray
-tmux_conf_theme_colour_4="#00afff"    # light blue
-tmux_conf_theme_colour_5="#ffff00"    # yellow
-tmux_conf_theme_colour_6="#080808"    # dark gray
-tmux_conf_theme_colour_7="#e4e4e4"    # white
-tmux_conf_theme_colour_8="#080808"    # dark gray
-tmux_conf_theme_colour_9="#ffff00"    # yellow
-tmux_conf_theme_colour_10="#ff00af"   # pink
-tmux_conf_theme_colour_11="#5fff00"   # green
-tmux_conf_theme_colour_12="#8a8a8a"   # light gray
-tmux_conf_theme_colour_13="#e4e4e4"   # white
-tmux_conf_theme_colour_14="#080808"   # dark gray
-tmux_conf_theme_colour_15="#080808"   # dark gray
-tmux_conf_theme_colour_16="#d70000"   # red
-tmux_conf_theme_colour_17="#e4e4e4"   # white
+# Everforest theme (dark hard)
+tmux_conf_theme_colour_1="#2D353B"    # bg0 - dark background
+tmux_conf_theme_colour_2="#343F44"    # bg1 - medium background
+tmux_conf_theme_colour_3="#D3C6AA"    # fg - foreground text
+tmux_conf_theme_colour_4="#7FBBB3"    # blue - accent color
+tmux_conf_theme_colour_5="#DBBC7F"    # yellow - warnings
+tmux_conf_theme_colour_6="#2D353B"    # bg0 - dark background
+tmux_conf_theme_colour_7="#D3C6AA"    # fg - light text
+tmux_conf_theme_colour_8="#343F44"    # bg1 - medium background
+tmux_conf_theme_colour_9="#A7C080"    # green - left segment 1 (username)
+tmux_conf_theme_colour_10="#83C092"   # aqua - left segment 2 (uptime)
+tmux_conf_theme_colour_11="#7FBBB3"   # blue - left segment 3 (loadavg)
+tmux_conf_theme_colour_12="#9DA9A0"   # grey2 - right text
+tmux_conf_theme_colour_13="#D3C6AA"   # fg - right text
+tmux_conf_theme_colour_14="#2D353B"   # bg0 - right background
+tmux_conf_theme_colour_15="#343F44"   # bg1 - status background
+tmux_conf_theme_colour_16="#E67E80"   # red - errors/important
+tmux_conf_theme_colour_17="#D3C6AA"   # fg - white text
 
 # default theme (ansi)
 #tmux_conf_theme_colour_1="colour0"
