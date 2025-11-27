@@ -54,7 +54,6 @@ tmux_conf_new_session_prompt=false
 # see https://github.com/termstandard/colors
 tmux_conf_24b_colour=auto
 
-# default theme
 # Everforest theme (dark hard)
 tmux_conf_theme_colour_1="#2D353B"    # bg0 - dark background
 tmux_conf_theme_colour_2="#343F44"    # bg1 - medium background
@@ -472,4 +471,4 @@ bind-key j run-shell -b "~/.tmux/tmux-jump.sh"
 unbind Enter
 bind-key Enter split-window -h -p 25 \; split-window -v -p 20 \; select-pane -L
 
-
+set -g aggressive-resize on
